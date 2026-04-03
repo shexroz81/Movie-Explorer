@@ -21,9 +21,9 @@ async function getMovie(movieName) {
     const moviePoster = document.createElement("div");
     moviePoster.className = "movie-poster";
     moviePoster.innerHTML = `
-       <h2>${data.Title}</h2>
-       <p>${data.Year}</p>
       <img src="${data.Poster}" alt="${data.Title}">
+      <h2>${data.Title}</h2>
+      <p>${data.Year}</p>
     `;
 
     container.appendChild(moviePoster);
